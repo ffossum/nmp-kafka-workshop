@@ -1,0 +1,46 @@
+= NMP Kafka Workshop Exercises
+
+:bootstrap-host: 7.tcp.eu.ngrok.io
+:bootstrap-port: 16233
+:bootstrap-server: {bootstrap-host}:{bootstrap-port}
+:ui-url: https://69a1-80-91-33-141.eu.ngrok.io
+:schema-registry: http://1358-80-91-33-141.eu.ngrok.io
+
+== Part 1
+
+Go to Confluent's https://developer.confluent.io/get-started/[Getting Started] guide.
+
+* You may select any of the listed programming languages.
+
+* In the *Kafka Setup* section, set *Kafka Location* to "Other".
+** Bootstrap Server URL: `{bootstrap-server}`
+
+[TIP]
+====
+Run the following command to verify that you are able to connect to the Kafka Cluster:
+[source,bash,subs="+attributes"]
+----
+nc -vz {bootstrap-host} {bootstrap-port}
+----
+====
+
+* Go to this {ui-url}[Kafka UI] to create a topic.
+** Set *Number of partitions* to 3.
+** Since everyone is connecting to the same cluster, you can make up your own unique topic name to avoid colliding with others.
+
+* Follow the rest of the *Getting Started* guide to produce and consume your own events.
+** Remember to substitute with your own topic name where applicable.
+
+[TIP]
+====
+You can check your topic's partitions, messages and consumers in the UI.
+====
+
+* Try running two consumers at the same time, and then produce some messages. How are the messages distributed among the consumers?
+
+== Part 2
+
+* Consume the topic `"public.nmp-kafka-workshop.announcements"`.
+
+Schema Registry URL::
+`pass:a[{schema-registry}]`
