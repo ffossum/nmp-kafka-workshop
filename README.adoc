@@ -45,7 +45,21 @@ This topic contains data encoded using https://avro.apache.org/[Apache Avro], wi
 
 [source,json]
 ----
-include::announcement.avsc[]
+{
+  "namespace": "examples.avro",
+  "type": "record",
+  "name": "Announcement",
+  "fields": [
+    {
+      "name": "author",
+      "type": "string"
+    },
+    {
+      "name": "message",
+      "type": "string"
+    }
+  ]
+}
 ----
 
 Schema Registry URL::
