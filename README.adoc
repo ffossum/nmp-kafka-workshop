@@ -62,8 +62,7 @@ This topic contains data encoded using https://avro.apache.org/[Apache Avro], wi
 }
 ----
 
-Schema Registry URL::
-`pass:a[{schema-registry}]`
+Use the following Schema Registry URL: `pass:a[{schema-registry}]`
 
 Solving this task will require you to do some digging on your own.
 
@@ -71,3 +70,7 @@ Solving this task will require you to do some digging on your own.
 * https://github.com/confluentinc/confluent-kafka-python/tree/master/examples[Python examples]
 * https://github.com/confluentinc/confluent-kafka-go/tree/master/examples[Go examples]
 * https://github.com/confluentinc/confluent-kafka-dotnet/tree/master/examples[.NET examples]
+
+For some languages you have the choice between deserializing into a _generic_ record (i.e. a hash map or dictionary) or a _specific_ record (i.e. a data type generated from the schema).
+
+Some pre-generated data types for the `Announcement` record are available in this repository.
