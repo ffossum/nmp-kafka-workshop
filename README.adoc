@@ -25,7 +25,7 @@ nc -vz {bootstrap-host} {bootstrap-port}
 ====
 
 * Go to this {ui-url}[Kafka UI] to create a topic.
-** Set *Number of partitions* to 3.
+** Set *Number of partitions* to 2.
 ** Since everyone is connecting to the same cluster, you can make up your own unique topic name to avoid colliding with others.
 
 * Follow the rest of the *Getting Started* guide to produce and consume your own events.
