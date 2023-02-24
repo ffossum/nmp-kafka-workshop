@@ -40,7 +40,20 @@ You can check your topic's partitions, messages and consumers in the UI.
 
 == Part 2
 
-* Consume the topic `"public.nmp-kafka-workshop.announcements"`.
+Consume the topic `"public.nmp-kafka-workshop.announcements"`.
+This topic contains data encoded using https://avro.apache.org/[Apache Avro], with the following schema:
+
+[source,json]
+----
+include::announcement.avsc[]
+----
 
 Schema Registry URL::
 `pass:a[{schema-registry}]`
+
+Solving this task will require you to do some digging on your own.
+
+* https://github.com/confluentinc/examples/tree/7.3.1-post/clients/cloud/java/src/main/java/io/confluent/examples/clients/cloud[Java examples]
+* https://github.com/confluentinc/confluent-kafka-python/tree/master/examples[Python examples]
+* https://github.com/confluentinc/confluent-kafka-go/tree/master/examples[Go examples]
+* https://github.com/confluentinc/confluent-kafka-dotnet/tree/master/examples[.NET examples]
