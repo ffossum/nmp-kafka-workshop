@@ -15,9 +15,20 @@ Go to Confluent's https://developer.confluent.io/get-started/[Getting Started] g
 * In the *Kafka Setup* section, set *Kafka Location* to "Other".
 ** Bootstrap Server URL: `{bootstrap-server}`
 
+:important-caption: 🚨
+
+[IMPORTANT]
+====
+Changing *Kafka Location* is needed in order to generate your config file correctly.
+
+If you forget to change it, you will get SSL/TLS related errors later.
+====
+
+:tip-caption: 💡
+
 [TIP]
 ====
-Run the following command to verify that you are able to connect to the Kafka Cluster:
+You can run the following command to verify that you are able to connect to the Kafka Cluster:
 [source,bash,subs="+attributes"]
 ----
 nc -vz {bootstrap-host} {bootstrap-port}
