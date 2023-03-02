@@ -1,10 +1,10 @@
 = NMP Kafka Workshop Exercises
 
-:bootstrap-host: 7.tcp.eu.ngrok.io
-:bootstrap-port: 16233
+:bootstrap-host: 2.tcp.eu.ngrok.io
+:bootstrap-port: 13489
 :bootstrap-server: {bootstrap-host}:{bootstrap-port}
-:ui-url: https://69a1-80-91-33-141.eu.ngrok.io
-:schema-registry: http://1358-80-91-33-141.eu.ngrok.io
+:ui-url: https://77c9-80-91-33-134.eu.ngrok.io
+:schema-registry: http://b59b-80-91-33-134.eu.ngrok.io
 
 == Part 1
 
